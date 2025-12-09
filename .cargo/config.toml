@@ -1,0 +1,13 @@
+[build]
+target = "thumbv7em-none-eabi"
+
+[target.thumbv7em-none-eabi]
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=-Tdefmt.x",
+]
+
+runner = "probe-rs run --chip STM32F401RETx --connect-under-reset"
+
+[env]
+DEFMT_LOG = "trace"
