@@ -1,9 +1,8 @@
 # ucosiii-rs
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-ARM%20Cortex--M4-orange.svg)](https://developer.arm.com/Processors/Cortex-M4)
+[![Platform](https://img.shields.io/badge/platform-ARM%20Cortex--M-orange.svg)](https://developer.arm.com/Processors)
 [![Rust](https://img.shields.io/badge/rust-no__std-red.svg)](https://doc.rust-lang.org/reference/names/preludes.html#the-no_std-attribute)
-[![Crates.io](https://img.shields.io/crates/v/ucosiii-rs.svg)](https://crates.io/crates/ucosiii-rs)
 
 > A safe, embedded Rust implementation of the μC/OS-III real-time operating system
 
@@ -102,21 +101,6 @@ ucosiii-rs/
 ├── Cargo.toml
 └── README.md
 ```
-
-## ⚙️ Configuration
-
-### Cargo Features
-
-| Feature    | Default | Description                           |
-| ---------- | ------- | ------------------------------------- |
-| `full`     | ✅       | Enable all available sync primitives  |
-| `sem`      | ✅       | Semaphore support                     |
-| `mutex`    | ✅       | Mutex with priority inheritance       |
-| `defmt`    | ✅       | Enable defmt logging via RTT          |
-| `pac`      | ✅       | Include STM32 peripheral access crate |
-| `hal`      | ❌       | Include STM32F4xx HAL                 |
-| `memory-x` | ✅       | Use memory.x from stm32-metapac       |
-| `rt`       | ❌       | Runtime support from stm32-metapac    |
 
 ## 🤝 Contributing
 
